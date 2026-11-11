@@ -22,7 +22,7 @@
 [Instalação](#-instalação-e-configuração) •
 [Execução](#-como-executar) •
 [Estrutura](#-estrutura-de-diretórios) •
-[Subir no GitHub](#-como-subir-no-github-passo-a-passo)
+
 
 ---
 
