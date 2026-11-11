@@ -83,7 +83,8 @@ O **Mentor de Conhecimentos** foi desenvolvido para acelerar a aprendizagem em a
 ⚙️ Instalação •
 ▶️ Execução •
 📂 Estrutura •
-📄 Licença📋 Pré-requisitosAntes de iniciar, certifique-se de que o seu ambiente possua as seguintes ferramentas instaladas e configuradas:FerramentaVersão MínimaFinalidadeJDK25+Compilação e execução da aplicação moderna com JavaApache Maven3.9+Gerenciamento de dependências e automação de buildGoogle AI Studio API Keygemini-2.5-flashCredencial de acesso para inferência dos modelos de IA[!TIP]
+📄 Licença📋 Pré-requisitos:
+Antes de iniciar, certifique-se de que o seu ambiente possua as seguintes ferramentas instaladas e configuradas:FerramentaVersão MínimaFinalidadeJDK25+Compilação e execução da aplicação moderna com JavaApache Maven3.9+Gerenciamento de dependências e automação de buildGoogle AI Studio API Keygemini-2.5-flashCredencial de acesso para inferência dos modelos de IA[!TIP]
 Você pode obter uma chave de API gratuitamente em: Google AI Studio.⚙️ Instalação e Configuração1. Clonar o Repositóriogit clone https://github.com/marlustech/mentor-de-conhecimentos.git
 cd mentor-de-conhecimentos
 2. Configurar a Chave da API (Segurança)[!CAUTION]
