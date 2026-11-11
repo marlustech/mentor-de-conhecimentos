@@ -79,7 +79,7 @@ O **Mentor de Conhecimentos** foi desenvolvido para acelerar a aprendizagem em a
         [Resposta técnica entregue à UI com Markdown]
 
 
-Aplicação full-stack inteligente com retenção de contexto via ChatMemory, integrada ao ecossistema Google GenAI e envelopada em uma interface cibernética com Glassmorphism 3D.📋 Pré-requisitos •
+📋 Pré-requisitos •
 ⚙️ Instalação •
 ▶️ Execução •
 📂 Estrutura •
