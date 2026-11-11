@@ -18,10 +18,9 @@
 [Visão Geral](#-visão-geral) •
 [Tecnologias](#-stack-tecnológica) •
 [Arquitetura](#-arquitetura--fluxo-de-dados) •
-[Pré-requisitos](#-pré-requisitos) •
-[Instalação](#-instalação-e-configuração) •
-[Execução](#-como-executar) •
-[Estrutura](#-estrutura-de-diretórios) •
+
+
+
 
 
 ---
