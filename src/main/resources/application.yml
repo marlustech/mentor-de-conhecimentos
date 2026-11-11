@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    openai:
+      api-key: ${GEMINI_API_KEY:}
+      chat:
+        options:
+          model: gemini-3.6-flash
