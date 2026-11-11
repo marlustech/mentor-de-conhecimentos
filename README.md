@@ -77,3 +77,47 @@ O **Mentor de Conhecimentos** foi desenvolvido para acelerar a aprendizagem em a
  └──────────────────────────┬──────────────────────────────┘
                             ▼
         [Resposta técnica entregue à UI com Markdown]
+
+
+Aplicação full-stack inteligente com retenção de contexto via ChatMemory, integrada ao ecossistema Google GenAI e envelopada em uma interface cibernética com Glassmorphism 3D.📋 Pré-requisitos •
+⚙️ Instalação •
+▶️ Execução •
+📂 Estrutura •
+📄 Licença📋 Pré-requisitosAntes de iniciar, certifique-se de que o seu ambiente possua as seguintes ferramentas instaladas e configuradas:FerramentaVersão MínimaFinalidadeJDK25+Compilação e execução da aplicação moderna com JavaApache Maven3.9+Gerenciamento de dependências e automação de buildGoogle AI Studio API Keygemini-2.5-flashCredencial de acesso para inferência dos modelos de IA[!TIP]
+Você pode obter uma chave de API gratuitamente em: Google AI Studio.⚙️ Instalação e Configuração1. Clonar o Repositóriogit clone https://github.com/marlustech/mentor-de-conhecimentos.git
+cd mentor-de-conhecimentos
+2. Configurar a Chave da API (Segurança)[!CAUTION]
+Nunca comite chaves de API literais. Mantenha suas credenciais isoladas em variáveis de ambiente para evitar bloqueios do GitHub Push Protection ou exposição indevida.No Windows (PowerShell):$env:GEMINI_API_KEY="AIzaSySUA_CHAVE_AQUI"
+No Linux / macOS:export GEMINI_API_KEY="AIzaSySUA_CHAVE_AQUI"
+No arquivo local (src/main/resources/application.yml):server:
+  port: 8080
+
+spring:
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          options:
+            model: gemini-2.5-flash
+▶️ Como ExecutarOpção 1: Via Linha de Comando (Maven)mvn clean spring-boot:run
+Opção 2: Pelo IntelliJ IDEAAbra o IntelliJ IDEA e carregue o projeto a partir do arquivo pom.xml.Aguarde a sincronização das dependências no painel lateral do Maven.Configure a variável de ambiente na execução:Abra o menu superior: Run > Edit Configurations...No campo Environment variables, insira: GEMINI_API_KEY=sua_chave_aquiLocalize a classe principal em src/main/java/com/mentor/agente/AgenteApplication.java.Clique com o botão direito e selecione Run 'AgenteApplication' (ou pressione Shift + F10).[!NOTE]
+Quando o servidor Tomcat inicializar na porta 8080, acesse a aplicação em seu navegador:🔗 http://localhost:8080📂 Estrutura de Diretóriosmentor-de-conhecimentos/
+├── src/
+│   ├── main/
+│   │   ├── java/com/mentor/agente/
+│   │   │   ├── controller/
+│   │   │   │   └── MentorController.java       # Endpoint REST (/api/mentor/perguntar)
+│   │   │   ├── service/
+│   │   │   │   └── MentorAgentService.java     # ChatClient configurado com ChatMemory
+│   │   │   └── AgenteApplication.java          # Ponto de partida do Spring Boot
+│   │   └── resources/
+│   │       ├── static/
+│   │       │   └── index.html                  # Interface Glassmorphism 3D (Three.js)
+│   │       └── application.yml                 # Mapeamento do Spring AI e Gemini
+│   └── test/                                   # Testes unitários e de integração
+├── .gitignore                                  # Regras de exclusão do Git
+├── pom.xml                                     # Dependências Maven (Spring Boot e Gemini)
+└── README.md                                   # Documentação técnica do projeto
+
+📄 LicençaDistribuído sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
